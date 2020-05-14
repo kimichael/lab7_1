@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.main_button = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // main_button
@@ -38,7 +37,7 @@
             this.main_button.AutoSize = true;
             this.main_button.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.main_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.main_button.Location = new System.Drawing.Point(327, 187);
+            this.main_button.Location = new System.Drawing.Point(276, 177);
             this.main_button.Name = "main_button";
             this.main_button.Size = new System.Drawing.Size(57, 23);
             this.main_button.TabIndex = 0;
@@ -47,25 +46,15 @@
             this.main_button.Click += new System.EventHandler(this.main_button_Click);
             this.main_button.MouseMove += new System.Windows.Forms.MouseEventHandler(this.main_button_MouseMove);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(13, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(750, 435);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(648, 415);
             this.Controls.Add(this.main_button);
-            this.MaximumSize = new System.Drawing.Size(1000, 1000);
-            this.MinimumSize = new System.Drawing.Size(200, 200);
             this.Name = "Form1";
             this.Text = "Running button";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -75,7 +64,6 @@
         #endregion
 
         private System.Windows.Forms.Button main_button;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

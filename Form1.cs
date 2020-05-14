@@ -72,10 +72,6 @@ namespace Lab7_1
                     if (newY > 0 && (newY < (Height - main_button.Size.Height * 2.5)))
                     {
                         main_button.Location = new Point(main_button.Location.X, Convert.ToInt32(newY));
-                        textBox1.Text = $"{deltaX};{deltaY};{distance}";
-                    }
-                    else {
-                        textBox1.Text = "Stopped for y";
                     }
                     
                 }
@@ -92,6 +88,11 @@ namespace Lab7_1
             
             prevX = e.X;
             prevY = e.Y;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
